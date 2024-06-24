@@ -1,10 +1,10 @@
 <!-- Section Présentation -->
 <section style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; text-align: center; padding: 20px; font-family: 'Helvetica Neue', sans-serif;">
   <div>
-    <img src="logo.png" alt="Logo" style="width: 100px; margin-bottom: 20px; animation: fadeIn 2s;">
+    <img src="/images/accueil/logo.png" alt="Logo" style="width: 100px; margin-bottom: 20px; animation: fadeIn 2s;">
     <h1 style="font-size: 3em; margin-bottom: 10px; animation: fadeIn 2s 0.5s;">Notre Entreprise</h1>
     <p style="font-size: 1.2em; margin-bottom: 20px; animation: fadeIn 2s 1s;">Votre solution pour un avenir meilleur</p>
-    <img src="illustration.jpg" alt="Illustration" style="width: 70%; border-radius: 15px; animation: fadeIn 2s 1.5s;">
+    <img src="/images/accueil/presentation.jpg" alt="Illustration" style="width: 70%; border-radius: 15px; animation: fadeIn 2s 1.5s;">
   </div>
 </section>
 
