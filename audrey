@@ -1,67 +1,23 @@
+<!-- Contenu de la page avec styles CSS inline -->
+<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0;">
 
-<!-- Styles inline pour simplifier -->
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-  }
+  <div style="width: 80%; max-width: 1200px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px;">
 
-  .accueil-container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
+    <div style="text-align: center; padding: 20px 0; background-color: #333; color: #fff; margin-bottom: 20px;">
+      <h1 style="margin: 0; font-size: 2em;">Nom de votre site</h1>
+      <p>Sous-titre ou slogan</p>
+    </div>
 
-  .accueil-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    margin-bottom: 20px;
-  }
+    <div style="padding: 20px; text-align: justify; line-height: 1.6;">
+      <h2>Bienvenue sur notre site !</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis orci id purus efficitur tincidunt. Integer euismod vitae velit ut consequat.</p>
+      <p>Integer euismod vitae velit ut consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
 
-  .accueil-header h1 {
-    margin: 0;
-    font-size: 2em;
-  }
+    <div style="text-align: center; padding: 10px 0; background-color: #333; color: #fff; position: fixed; bottom: 0; width: 100%;">
+      <p>&copy; 2024 Nom de votre entreprise</p>
+    </div>
 
-  .accueil-content {
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.6;
-  }
-
-  .accueil-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
-
-<!-- Contenu de la page -->
-<div class="accueil-container">
-  <div class="accueil-header">
-    <h1>Nom de votre site</h1>
-    <p>Sous-titre ou slogan</p>
   </div>
 
-  <div class="accueil-content">
-    <h2>Bienvenue sur notre site !</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis orci id purus efficitur tincidunt. Integer euismod vitae velit ut consequat.</p>
-    <p>Integer euismod vitae velit ut consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-  </div>
-
-  <div class="accueil-footer">
-    <p>&copy; 2024 Nom de votre entreprise</p>
-  </div>
 </div>
