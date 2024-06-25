@@ -1,62 +1,67 @@
-<!-- Section Présentation -->
-<section style="display: flex; align-items: center; justify-content: center; height: 100vh; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; text-align: center; padding: 20px; font-family: 'Helvetica Neue', sans-serif;">
-  <div>
-    <img src="/images/accueil/logo.png" alt="Logo" style="width: 100px; margin-bottom: 20px; animation: fadeIn 2s;">
-    <h1 style="font-size: 3em; margin-bottom: 10px; animation: fadeIn 2s 0.5s;">Notre Entreprise</h1>
-    <p style="font-size: 1.2em; margin-bottom: 20px; animation: fadeIn 2s 1s;">Votre solution pour un avenir meilleur</p>
-    <img src="/images/accueil/presentation.jpg" alt="Illustration" style="width: 70%; border-radius: 15px; animation: fadeIn 2s 1.5s;">
-  </div>
-</section>
 
-<!-- Section À propos -->
-<section style="background-color: #fff; padding: 50px 20px; text-align: center; font-family: 'Helvetica Neue', sans-serif;">
-  <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;">Qui sommes-nous?</h2>
-  <p style="font-size: 1.2em; color: #666;">Nous sommes une équipe passionnée par l'innovation et l'excellence. Nous offrons des services personnalisés pour répondre aux besoins uniques de chaque client.</p>
-</section>
-
-<!-- Section Nos Services -->
-<section style="background-color: #e9ecef; padding: 50px 20px; text-align: center; font-family: 'Helvetica Neue', sans-serif;">
-  <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;">Nos Services</h2>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-    <div style="background-color: #fff; padding: 20px; margin: 10px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
-      <h3 style="font-size: 1.5em; color: #333;">Service 1</h3>
-      <p style="font-size: 1em; color: #666;">Description du service 1.</p>
-    </div>
-    <div style="background-color: #fff; padding: 20px; margin: 10px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
-      <h3 style="font-size: 1.5em; color: #333;">Service 2</h3>
-      <p style="font-size: 1em; color: #666;">Description du service 2.</p>
-    </div>
-    <div style="background-color: #fff; padding: 20px; margin: 10px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;">
-      <h3 style="font-size: 1.5em; color: #333;">Service 3</h3>
-      <p style="font-size: 1em; color: #666;">Description du service 3.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Section Contact -->
-<section style="background-color: #fff; padding: 50px 20px; text-align: center; font-family: 'Helvetica Neue', sans-serif;">
-  <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;">Contactez-nous</h2>
-  <p style="font-size: 1.2em; color: #666;">Email: contact@notresite.com</p>
-  <p style="font-size: 1.2em; color: #666;">Téléphone: 0123456789</p>
-  <div style="width: 80%; margin: 0 auto; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;">
-    <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_LINK_HERE" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
-</section>
-
+<!-- Styles inline pour simplifier -->
 <style>
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .accueil-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+  .accueil-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .accueil-header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .accueil-content {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  .accueil-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 </style>
 
-<script>
-  document.querySelectorAll('div[style*="transition"]').forEach((el) => {
-    el.addEventListener('mouseover', () => {
-      el.style.transform = 'scale(1.05)';
-    });
-    el.addEventListener('mouseout', () => {
-      el.style.transform = 'scale(1)';
-    });
-  });
-</script>
+<!-- Contenu de la page -->
+<div class="accueil-container">
+  <div class="accueil-header">
+    <h1>Nom de votre site</h1>
+    <p>Sous-titre ou slogan</p>
+  </div>
+
+  <div class="accueil-content">
+    <h2>Bienvenue sur notre site !</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis orci id purus efficitur tincidunt. Integer euismod vitae velit ut consequat.</p>
+    <p>Integer euismod vitae velit ut consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+  </div>
+
+  <div class="accueil-footer">
+    <p>&copy; 2024 Nom de votre entreprise</p>
+  </div>
+</div>
