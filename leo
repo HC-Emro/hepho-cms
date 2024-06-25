@@ -7,13 +7,12 @@
       <a href="#services" class="hero-button">En savoir plus</a>
     </div>
     <div class="hero-image">
-      <img src="https://via.placeholder.com/600x400" alt="Hero Image">
+      <img src="https://via.placeholder.com/600x400" alt="Hero Image" class="img-fluid">
     </div>
   </section>
 
   <!-- Features Section -->
   <section id="features" class="features-section">
-    <h2 class="section-title">Nos Avantages</h2>
     <div class="features-container">
       <div class="feature">
         <i class="feature-icon bi bi-lightning-fill"></i>
@@ -35,20 +34,19 @@
 
   <!-- Services Section -->
   <section id="services" class="services-section">
-    <h2 class="section-title">Nos Services</h2>
     <div class="services-container">
       <div class="service">
-        <img src="https://via.placeholder.com/150" alt="Service 1">
+        <img src="https://via.placeholder.com/150" alt="Service 1" class="img-fluid">
         <h3 class="service-title">Service 1</h3>
         <p class="service-description">Description du service 1.</p>
       </div>
       <div class="service">
-        <img src="https://via.placeholder.com/150" alt="Service 2">
+        <img src="https://via.placeholder.com/150" alt="Service 2" class="img-fluid">
         <h3 class="service-title">Service 2</h3>
         <p class="service-description">Description du service 2.</p>
       </div>
       <div class="service">
-        <img src="https://via.placeholder.com/150" alt="Service 3">
+        <img src="https://via.placeholder.com/150" alt="Service 3" class="img-fluid">
         <h3 class="service-title">Service 3</h3>
         <p class="service-description">Description du service 3.</p>
       </div>
@@ -57,7 +55,6 @@
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials-section">
-    <h2 class="section-title">Témoignages</h2>
     <div class="testimonials-container">
       <div class="testimonial">
         <p class="testimonial-text">"Service exceptionnel et équipe dévouée !"</p>
@@ -70,39 +67,39 @@
     </div>
   </section>
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contactez-Nous</h2>
-  <div class="contact-details">
-    <div class="contact-item">
-      <i class="bi bi-telephone-fill contact-icon"></i>
-      <p class="contact-info">Téléphone: <a href="tel:+123456789">+1 234 567 89</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="bi bi-telephone-fill contact-icon"></i>
+        <p class="contact-info">Téléphone: <a href="tel:+123456789">+1 234 567 89</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-envelope-fill contact-icon"></i>
+        <p class="contact-info">Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-clock-fill contact-icon"></i>
+        <p class="contact-info">Horaires d'ouverture: <br>Lundi - Vendredi: 9h - 18h</p>
+      </div>
+      <div class="contact-item">
+        <i class="bi bi-geo-alt-fill contact-icon"></i>
+        <p class="contact-info">Adresse: <br>123 Rue de l'Exemple, Paris, France</p>
+      </div>
     </div>
-    <div class="contact-item">
-      <i class="bi bi-envelope-fill contact-icon"></i>
-      <p class="contact-info">Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9996495597843!2d2.2922924156742987!3d48.85884407928768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcac7c9d01f%3A0x2b3b92a6f4d54599!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1626095165006!5m2!1sen!2sfr" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
     </div>
-    <div class="contact-item">
-      <i class="bi bi-clock-fill contact-icon"></i>
-      <p class="contact-info">Horaires d'ouverture: <br>Lundi - Vendredi: 9h - 18h</p>
-    </div>
-    <div class="contact-item">
-      <i class="bi bi-geo-alt-fill contact-icon"></i>
-      <p class="contact-info">Adresse: <br>123 Rue de l'Exemple, Paris, France</p>
-    </div>
-  </div>
-  <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9996495597843!2d2.2922924156742987!3d48.85884407928768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcac7c9d01f%3A0x2b3b92a6f4d54599!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1626095165006!5m2!1sen!2sfr" 
-      width="100%" 
-      height="450" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
+  </section>
+</div>
 <style>
-/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -185,6 +182,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  margin-bottom: 20px;
 }
 
 .feature:hover {
@@ -215,12 +213,15 @@ body {
 
 .services-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
 }
 
 .service {
-  width: 30%;
+  width: calc(50% - 20px);
+  max-width: 300px;
+  margin: 10px;
 }
 
 .service img {
@@ -248,21 +249,20 @@ body {
 .testimonials-container {
   display: flex;
   justify-content: space-around;
-  text-align: center;
 }
 
 .testimonial {
-  width: 45%;
-  background-color: white;
+  width: 40%;
   padding: 20px;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .testimonial-text {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .testimonial-author {
@@ -273,23 +273,17 @@ body {
 /* Contact Section */
 .contact-section {
   padding: 50px;
-  background-color: #fff;
-  text-align: center;
+  background-color: #f9f9f9;
 }
 
 .contact-details {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  justify-content: space-around;
 }
 
 .contact-item {
-  width: 45%;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .contact-icon {
@@ -304,20 +298,93 @@ body {
 }
 
 .map-container {
-  max-width: 800px;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
-/* Keyframes */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    opacity: 1;
+
+  .feature {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .service {
+    width: 100%;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .features-section {
+    padding: 30px;
+  }
+
+  .services-section {
+    padding: 30px;
+  }
+
+  .testimonials-section {
+    padding: 30px;
+  }
+
+  .contact-section {
+    padding: 30px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature {
+    width: 100%;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .testimonial {
+    width: 100%;
   }
 }
 </style>
-
-<!-- Bootstrap Icons CDN -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
