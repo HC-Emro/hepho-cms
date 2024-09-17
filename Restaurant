@@ -188,11 +188,11 @@
         <div class="half-width">
             <div id="slideshow">
                 <i class="bi bi-chevron-left" onclick="prevSlide()"></i>
-                <img class="slide" src="https://arpelin.fr/img/sites/diapo_1.jpg" alt="1">
-                <img class="slide" src="https://arpelin.fr/img/sites/diapo_2.jpg" alt="2" style="display: none;">
-                <img class="slide" src="https://arpelin.fr/img/sites/diapo_3.jpg" alt="3" style="display: none;">
-                <img class="slide" src="https://arpelin.fr/img/sites/diapo_4.jpg" alt="4" style="display: none;">
-                <img class="slide" src="https://arpelin.fr/img/sites/diapo_5.jpg" alt="5" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_1.webp" alt="1">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_2.webp" alt="2" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_3.webp" alt="3" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_4.webp" alt="4" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_5.webp" alt="5" style="display: none;">
                 <i class="bi bi-chevron-right" onclick="nextSlide()"></i>
             </div>
         </div>
