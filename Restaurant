@@ -1,0 +1,276 @@
+<style>
+    .presentation-image {
+        background-image: url('/images/accueil/presentation.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        position: relative; /* Ajout d'une position relative pour les éléments enfants */
+    }
+
+    .logo-container {
+        position: absolute;
+        top: 50%; /* Placer le conteneur du logo au milieu verticalement */
+        left: 50%; /* Placer le conteneur du logo au milieu horizontalement */
+        transform: translate(-50%, -50%); /* Déplacer le conteneur du logo de moitié de sa taille dans les deux directions */
+    }
+    .container-pc {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Pour centrer verticalement les éléments */
+}
+
+.container-pc > * {
+    flex: 1; /* Pour que chaque élément ait une largeur égale */
+}
+    @media only screen and (max-width: 767px) {
+        .container-pc {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    .paragraphe-pc {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    @media only screen and (max-width: 769px) {
+        .paragraphe-pc {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<div class="presentation-image">
+    <div class="logo-container">
+        <img src="images/accueil/logo.png" alt="Logo" class="logo-presentation">
+    </div>
+</div>
+
+<style>
+.first-section {
+    background-color: #ffffff; /* Couleur de fond de la section */
+    padding: 40px 0; /* Espacement intérieur de la section */
+    text-align: center; /* Centrage du contenu */
+}
+
+.first-container {
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrage horizontal du conteneur */
+}
+
+.first-column {
+    margin-bottom: 30px; /* Espacement entre les colonnes */
+}
+
+.first-divider {
+    border-top: 1px solid #2c2c2c; /* Style de la ligne de séparation */
+    margin: 0 auto 20px; /* Espacement autour du diviseur */
+    width: 100px; /* Largeur du diviseur */
+}
+
+.first-heading h2 {
+    font-size: 24px; /* Taille de police du titre */
+    color: #2c2c2c; /* Couleur du texte du titre */
+    margin-bottom: 10px; /* Espacement en dessous du titre */
+}
+
+.first-text-editor {
+    font-size: 16px; /* Taille de police du texte */
+    line-height: 1.6; /* Hauteur de ligne du texte */
+    color: #2c2c2c; /* Couleur du texte */
+}
+
+.first-text-editor p {
+    margin: 0 auto; /* Centrage horizontal du paragraphe */
+    max-width: 800px; /* Largeur maximale du paragraphe */
+}
+
+.parallax-section {
+    background-image: url('/images/accueil/presentation.jpg'); /* Chemin vers votre image d'arrière-plan */
+    background-attachment: fixed; /* Fixe l'image d'arrière-plan pendant le défilement */
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    color: #333;
+}
+
+.half-width {
+    width: 50%;
+    padding: 30px;
+}
+@media only screen and (max-width: 769px) {
+    .half-width {
+        width: 80%;
+    }
+}
+
+#slideshow {
+    max-width: 600px;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#slideshow i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#slideshow i.bi-chevron-left {
+    left: 10px;
+}
+
+#slideshow i.bi-chevron-right {
+    right: 10px;
+}
+
+#slideshow img {
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.with-opacity {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.with-opacity h2, .with-opacity p, .with-opacity table {
+    color: #333;
+    text-align: center;
+}
+
+.with-opacity table {
+    margin: 0 auto;
+}
+
+.with-opacity td {
+    padding: 10px;
+}
+
+</style>
+
+<section class="first-section">
+    <div class="first-container">
+        <div class="first-column">
+            <div class="first-heading">
+                <h2>Arpelin CMS</h2>
+            </div>
+            <div class="first-divider">
+                <span class="first-divider-separator"></span>
+            </div>
+            <div class="first-text-editor">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis orci id purus efficitur tincidunt. Integer euismod vitae velit ut consequat.
+                  Integer euismod vitae velit ut consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button onclick="window.location.href='/shop'" style="display: flex; align-items: center; margin-top: 20px; margin-bottom: 20px; max-width: 300px;" class="bouton2">
+                    <i class="bi bi-cart"></i>&nbsp;&nbsp;Commander en ligne
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-section">
+    <div class="container-pc">
+
+        <div class="half-width">
+            <div id="slideshow">
+                <i class="bi bi-chevron-left" onclick="prevSlide()"></i>
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_1.jpg" alt="1">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_2.jpg" alt="2" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_3.jpg" alt="3" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_4.jpg" alt="4" style="display: none;">
+                <img class="slide" src="https://arpelin.fr/img/sites/diapo_5.jpg" alt="5" style="display: none;">
+                <i class="bi bi-chevron-right" onclick="nextSlide()"></i>
+            </div>
+        </div>
+
+        <div class="half-width with-opacity">
+            <h2>Notre Engagement</h2>
+            <div class="first-divider">
+                <span class="first-divider-separator"></span>
+            </div>
+            <p>Nous nous engageons à utiliser des ingrédients frais et de qualité pour préparer nos plats. La satisfaction de nos clients est notre priorité absolue, et nous nous efforçons toujours de fournir un service amical et rapide.</p>
+            <br>
+            <h2><i class="bi bi-clock"></i> Horaires d'Ouverture</h2>
+            <div class="first-divider">
+                <span class="first-divider-separator"></span>
+            </div>
+            <table>
+                <tbody><tr>
+                    <td>Lundi - Samedi</td>
+                    <td>11h30 - 14h30</td>
+                    <td>18h - 23h</td>
+                </tr>
+                <tr>
+                    <td>Dimanche</td>
+                    <td style="text-align: center;">-</td>
+                    <td>18h - 23h</td>
+                </tr>
+            </tbody></table>
+            <p>Venez nous rendre visite et découvrez la saveur authentique de nos plats !</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="margin: 0px; background-color: #252525; color: #ffffff;">
+    <div class="container-pc">
+        <div>
+            <div class="map-container" style="max-width: 100%; height: 400px; position: relative; overflow: hidden;">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103357.87166967953!2d2.2646349990563044!3d48.85893843455474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e1!3m2!1sfr!2sfr!4v1726608009774!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+            
+        <div>
+            <div style="padding: 30px;">
+                <h2 style="color: #333; text-align: center; padding: 10px; color: inherit; margin-top: 0px;">Nous Joindre</h2>
+                <div class="contact-info" style="margin-bottom: 20px; text-align: center;">
+                    <p style="color: inherit;"><i class="bi bi-geo-alt"></i> 1 rue de Paris, 57000 Metz</p>
+                    <p style="color: inherit;"><i class="bi bi-telephone"></i> <a style="text-decoration: none; color: inherit;" href="tel:123456789">123456789</a></p>
+                    <p style="color: inherit;"><i class="bi bi-envelope"></i> arpelin@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    
+<script>
+    var slides = document.querySelectorAll('.slide');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 5000); // Intervalle de 5 secondes
+    var demarre = false;
+
+    function nextSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    function prevSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
+    }
+
+    // Fonction pour démarrer le diaporama automatiquement
+    function startSlideshow() {
+        slideInterval = setInterval(nextSlide, 5000); // Intervalle de 5 secondes
+    }
+
+    // Fonction pour arrêter le diaporama automatique
+    function stopSlideshow() {
+        clearInterval(slideInterval);
+    }
+</script>
