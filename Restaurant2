@@ -1,9 +1,9 @@
 
   <!-- Section 1 : Logo + Titre et Description -->
-  <section style="width: 100%; background-image: url('images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
+  <section style="width: 100%; background-image: url('/images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
     <div style="display: flex; flex-wrap: wrap; padding: 50px;">
       <div style="flex: 1; display: flex; justify-content: center;">
-        <img src="images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
+        <img src="/images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
       </div>
       <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
         <h1 style="margin: 0; font-size: 2.5rem; text-align: left;">Titre de la section</h1>
