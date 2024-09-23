@@ -1,13 +1,13 @@
 <!-- Section 1 : Logo + Titre et Description -->
 <section style="width: 100%; background-image: url('/images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
-  <div class="acc_1" style="display: flex; justify-content: center; align-items: center;">
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <div style="flex: 1; display: flex; justify-content: center; max-width: 300px;">
+  <div class="acc_1" style="display: flex; justify-content: center; align-items: center;" contenteditable="true">
+    <div style="display: flex; justify-content: center; align-items: center;" contenteditable="true">
+      <div style="flex: 1; display: flex; justify-content: center; max-width: 300px;" contenteditable="true">
         <img src="/images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
       </div>
-      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; max-width: 600px;">
-        <h1 class="acc_h1" style="color: white; text-shadow: 1px 1px 3px black; margin-bottom: 20px;">Titre de la section</h1>
-        <p style="color: #f0f0f0; text-shadow: 1px 1px 3px black;">Ceci est une description de la section d'accueil. Présentez brièvement votre établissement ici.</p>
+      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; max-width: 600px;" contenteditable="true">
+        <h1 class="acc_h1" style="color: white; text-shadow: 1px 1px 3px black; margin-bottom: 20px;" contenteditable="true">Titre de la section</h1>
+        <p style="color: #f0f0f0; text-shadow: 1px 1px 3px black;" contenteditable="true">Ceci est une description de la section d'accueil. Présentez brièvement votre établissement ici.</p>
       </div>
     </div>
   </div>
@@ -15,15 +15,15 @@
 
 <!-- Section 2 : Titre, Sous-titre, Description, Boutons -->
 <section style="padding: 50px; text-align: center; background-color: rgb(242, 242, 242);">
-  <h2>Titre de la section</h2>
+  <h2 contenteditable="true">Titre de la section</h2>
   <br>
-  <p style="margin-bottom: 20px;">Ceci est une description qui explique les options disponibles dans cette section.</p>
+  <p style="margin-bottom: 20px;" contenteditable="true">Ceci est une description qui explique les options disponibles dans cette section.</p>
   <br>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <a href="/shop" class="bouton2">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;" contenteditable="true">
+    <a href="/shop" class="bouton2" contenteditable="true">
         <i class="bi bi-cart"></i> Commander en ligne
     </a>
-    <a href="/reservation" class="bouton2">
+    <a href="/reservation" class="bouton2" contenteditable="true">
         <i class="bi bi-calendar-check"></i> Réserver en ligne
     </a>
   </div>
@@ -31,14 +31,14 @@
 
 <!-- Section 3 : Horaires d'ouverture + Adresse -->
 <section style="background-color: white; padding: 50px; text-align: center;">
-  <h2 style="color: black;">Nos horaires d'ouverture</h2>
+  <h2 style="color: black;" contenteditable="true">Nos horaires d'ouverture</h2>
   <br>
-  <p style="color: black;">Lundi - Vendredi : 9h - 18h</p>
-  <p style="color: black;">Samedi : 10h - 16h</p>
+  <p style="color: black;" contenteditable="true">Lundi - Vendredi : 9h - 18h</p>
+  <p style="color: black;" contenteditable="true">Samedi : 10h - 16h<div><br></div><div><i>Les horaires pouvant varier, il convient de vérifier sur la fiche Google de l'établissement.</i><br></div></p>
   <br>
-  <h2 style="color: black;">Adresse</h2>
+  <h2 style="color: black;" contenteditable="true">Adresse</h2>
   <br>
-  <p style="color: black;">123 Rue de l'Établissement, 75000 Paris</p>
+  <p style="color: black;" contenteditable="true">123 Rue de l'Établissement, 75000 Paris</p>
 </section>
 
 <!-- Responsive styles -->
