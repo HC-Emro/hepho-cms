@@ -1,70 +1,73 @@
-  <!-- Section 1 : Logo + Titre et Description -->
-  <section style="width: 100%; background-image: url('/images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
-    <div style="display: flex; flex-wrap: wrap; padding: 50px; align-items: center;">
-      <div style="flex: 1; display: flex; justify-content: center;">
+<!-- Section 1 : Logo + Titre et Description -->
+<section style="width: 100%; background-image: url('/images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
+  <div class="acc_1" style="display: flex; justify-content: center; align-items: center;">
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <div style="flex: 1; display: flex; justify-content: center; max-width: 300px;">
         <img src="/images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
       </div>
-      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
-        <h1 style="margin: 0; font-size: 2.5rem; color: white; text-shadow: 1px 1px 3px black;">Titre de la section</h1>
+      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; max-width: 600px;">
+        <h1 class="acc_h1" style="color: white; text-shadow: 1px 1px 3px black; margin-bottom: 20px;">Titre de la section</h1>
         <p style="color: #f0f0f0; text-shadow: 1px 1px 3px black;">Ceci est une description de la section d'accueil. Présentez brièvement votre établissement ici.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Section 2 : Titre, Sous-titre, Description, Boutons -->
-  <section style="padding: 50px; text-align: center;">
-    <h2>Titre de la section</h2>
-    <h3>Sous-titre de la section</h3>
-    <br>
-    <p style="margin-bottom: 20px;">Ceci est une description qui explique les options disponibles dans cette section.</p>
-    <br>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-      <button class="bouton2">
+<!-- Section 2 : Titre, Sous-titre, Description, Boutons -->
+<section style="padding: 50px; text-align: center; background-color: rgb(242, 242, 242);">
+  <h2>Titre de la section</h2>
+  <br>
+  <p style="margin-bottom: 20px;">Ceci est une description qui explique les options disponibles dans cette section.</p>
+  <br>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <a href="/shop" class="bouton2">
         <i class="bi bi-cart"></i> Commander en ligne
-      </button>
-      <button class="bouton2">
+    </a>
+    <a href="/reservation" class="bouton2">
         <i class="bi bi-calendar-check"></i> Réserver en ligne
-      </button>
-    </div>
-  </section>
+    </a>
+  </div>
+</section>
 
-  <!-- Section 3 : Horaires d'ouverture + Adresse -->
-  <section style="background: radial-gradient(circle, rgb(46, 46, 46) 0%, rgb(81, 81, 81) 100%); padding: 50px; text-align: center;">
-    
-    <div style="background-color: #000000; padding: 20px; margin: 0 auto;">
-      <h2 style="color: white;">Nos horaires d'ouverture</h2>
-      <br>
-      <p style="color: white;">Lundi - Vendredi : 9h - 18h</p>
-      <p style="color: white;">Samedi : 10h - 16h</p>
-      <br>
-      <h2 style="color: white;">Adresse</h2>
-      <br>
-      <p style="color: white;">123 Rue de l'Établissement, 75000 Paris</p>
-    </div>
-  </section>
+<!-- Section 3 : Horaires d'ouverture + Adresse -->
+<section style="background-color: white; padding: 50px; text-align: center;">
+  <h2 style="color: black;">Nos horaires d'ouverture</h2>
+  <br>
+  <p style="color: black;">Lundi - Vendredi : 9h - 18h</p>
+  <p style="color: black;">Samedi : 10h - 16h</p>
+  <br>
+  <h2 style="color: black;">Adresse</h2>
+  <br>
+  <p style="color: black;">123 Rue de l'Établissement, 75000 Paris</p>
+</section>
 
-  <!-- Responsive styles -->
-  <style>
-    /* Vue mobile */
-    @media (max-width: 768px) {
-      section div img {
-        margin-bottom: 20px;
-      }
-
-      section div h1, section div p, section h2 {
-        text-align: center;
-      }
-
-      section div {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-      }
-
-      .bouton2 {
-        width: 100%;
-        margin-bottom: 10px;
-      }
+<!-- Responsive styles -->
+<style>
+  .acc_h1 {
+    font-size: 2.5rem;
+  }
+  .acc_1 {
+    height: 300px;
+  }
+  /* Vue mobile */
+  @media (max-width: 768px) {
+    .acc_1 {
+      height: 400px;
     }
-  </style>
+    section div img {
+      margin-bottom: 20px;
+    }
+    .acc_h1 {
+      font-size: 2rem;
+    }
+    section div h1, section div p, section h2 {
+      text-align: center;
+    }
 
+    section div {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+</style>
