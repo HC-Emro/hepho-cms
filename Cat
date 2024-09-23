@@ -1,0 +1,60 @@
+
+  <!-- Section 1 : Logo + Titre et Description -->
+  <section style="width: 100%; background-image: url('images/accueil/presentation.jpg'); background-size: cover; background-position: center;">
+    <div style="display: flex; flex-wrap: wrap; padding: 50px;">
+      <div style="flex: 1; display: flex; justify-content: center;">
+        <img src="images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
+      </div>
+      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; padding-left: 20px;">
+        <h1 style="margin: 0; font-size: 2.5rem; text-align: left;">Titre de la section</h1>
+        <p style="text-align: left;">Ceci est une description de la section d'accueil. Présentez brièvement votre établissement ici.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 : Titre, Sous-titre, Description, Boutons -->
+  <section style="padding: 50px; text-align: center;">
+    <h2>Titre de la section</h2>
+    <h3>Sous-titre de la section</h3>
+    <p>Ceci est une description qui explique les options disponibles dans cette section.</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      <button class="bouton2">
+        <i class="bi bi-cart"></i> Commander en ligne
+      </button>
+      <button class="bouton2">
+        <i class="bi bi-calendar-check"></i> Réserver en ligne
+      </button>
+    </div>
+  </section>
+
+  <!-- Section 3 : Horaires d'ouverture + Adresse -->
+  <section style="width: 100%; background-color: #f2f2f2; padding: 50px; text-align: center;">
+    <h2>Nos horaires d'ouverture</h2>
+    <p>Lundi - Vendredi : 9h - 18h</p>
+    <p>Samedi : 10h - 16h</p>
+    <p>Adresse : 123 Rue de l'Établissement, 75000 Paris</p>
+  </section>
+
+  <!-- Responsive styles -->
+  <style>
+    /* Vue mobile */
+    @media (max-width: 768px) {
+      section div img {
+        margin-bottom: 20px;
+      }
+
+      section div h1, section div p {
+        text-align: center;
+      }
+
+      section div {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bouton2 {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
