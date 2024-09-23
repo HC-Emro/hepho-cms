@@ -5,7 +5,7 @@
       <div style="flex: 1; display: flex; justify-content: center; max-width: 300px;" contenteditable="true">
         <img src="/images/accueil/logo.png" alt="Logo" style="max-width: 200px; height: auto;">
       </div>
-      <div style="flex: 2; display: flex; flex-direction: column; justify-content: center; max-width: 600px;" contenteditable="true">
+      <div class="acc_2" style="flex: 2; display: flex; flex-direction: column; justify-content: center; max-width: 600px;" contenteditable="true">
         <h1 class="acc_h1" style="color: white; text-shadow: 1px 1px 3px black; margin-bottom: 20px;" contenteditable="true">Titre de la section</h1>
         <p style="color: #f0f0f0; text-shadow: 1px 1px 3px black;" contenteditable="true">Ceci est une description de la section d'accueil. Présentez brièvement votre établissement ici.</p>
       </div>
@@ -49,10 +49,16 @@
   .acc_1 {
     height: 300px;
   }
+  .acc_2 {
+    margin-left: 60px;
+  }
   /* Vue mobile */
   @media (max-width: 768px) {
     .acc_1 {
       height: 400px;
+    }
+    .acc_2 {
+      margin-left: 0px;
     }
     section div img {
       margin-bottom: 20px;
