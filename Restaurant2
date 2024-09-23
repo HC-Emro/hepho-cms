@@ -28,7 +28,7 @@
   </section>
 
   <!-- Section 3 : Horaires d'ouverture + Adresse -->
-  <section style="width: 100%; background-color: #f2f2f2; padding: 50px; text-align: center;">
+  <section style="background-color: #f2f2f2; padding: 50px; text-align: center;">
     <h2>Nos horaires d'ouverture</h2>
     <p>Lundi - Vendredi : 9h - 18h</p>
     <p>Samedi : 10h - 16h</p>
@@ -52,9 +52,5 @@
         text-align: center;
       }
 
-      .bouton2 {
-        width: 100%;
-        margin-bottom: 10px;
-      }
     }
   </style>
