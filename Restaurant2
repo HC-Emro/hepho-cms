@@ -49,8 +49,8 @@
   .acc_1 {
     min-height: 300px;
     height: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
   .acc_2 {
     margin-left: 60px;
